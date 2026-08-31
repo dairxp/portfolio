@@ -1,15 +1,15 @@
 <script setup lang="ts">
-import { ref } from 'vue'
-import Hello from '../components/Hello.vue'
-
-// Cambia esto a 'false' para apagarlo y ver el contenido real
-const showProvisionalEffect = ref(true)
+import Init from '../components/init.vue'
 </script>
 
 <template>
-  <Hello v-if="showProvisionalEffect" />
-  
-  <div v-else>
-    <h1>Aldair DEV | DAIR XP</h1>
-  </div>
+  <Init>
+    <div style="text-align: center;">
+      <h1>
+        Aldair DEV | 
+        <router-link to="/hello">DAIR XP</router-link>
+      </h1>
+      <p style="font-size: 1.2rem; margin-top: 10px;">En Desarrollo...</p>
+    </div>
+  </Init>
 </template>
