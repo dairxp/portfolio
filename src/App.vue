@@ -1,8 +1,7 @@
 <script setup lang="ts">
-
+// Contenedor principal de la aplicación
 </script>
 
 <template>
-  <h1>Aldair DEV - DAIR XP</h1>
-  
+  <router-view />
 </template>

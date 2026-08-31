@@ -1,0 +1,45 @@
+@use 'variables' as *;
+
+// Variables CSS (Manejo de colores universales)
+
+:root {
+  // Fondos por defecto (Modo Claro)
+  --bg:      #{$color-bg-light};
+  --surface: #{$color-surface-light};
+
+  // Colores Fijos
+  --text-h:    #{$color-heading};
+  --text:      #{$color-body};
+  --accent:    #{$color-accent};
+  --accent-2:  #{$color-accent-2};
+}
+
+// Estilos Base Universales
+
+body {
+  background-color: var(--bg);
+  color: var(--text);
+  margin: 0;
+  font-family: system-ui, -apple-system, sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: var(--text-h);
+  font-family: 'Sansation', sans-serif; // Aplicando la fuente elegida
+  margin-top: 0;
+}
+
+a {
+  color: var(--accent);
+  text-decoration: none;
+  
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+#app {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
